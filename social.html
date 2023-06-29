@@ -14,8 +14,12 @@
     <meta name="revisit-after" content="7 days">
     <meta charset="UTF-8">
 
+    <link rel="Website Icon" type="png" href="images/logo.png">
+    
     <title>Piattaforme Social</title>
     <style>
+
+    @media screen and (max-width: 767px) {
     body {
       font-family: "Lato", Arial, sans-serif;
       background: linear-gradient(180deg, indigo, rgb(180, 182, 239));
@@ -24,7 +28,7 @@
       overflow: hidden;
       color:  #b7e39a;
     }
-
+    
     mark {
       background-color: #eafdab;
     }
@@ -185,6 +189,353 @@
       border-radius: 15px 15px 15px 15px;
       margin-left: 590px;
       margin-top: 30px;
+    }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      body {
+      font-family: "Lato", Arial, sans-serif;
+      background: linear-gradient(180deg, indigo, rgb(180, 182, 239));
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      color:  #b7e39a;
+    }
+    
+    mark {
+      background-color: #eafdab;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(180deg, indigo,rgb(180, 182, 239));
+    }
+    
+    .title h1 {
+      line-height: 60px;
+      text-align: center;
+      font-size: 50px;
+      margin-top: 10px;
+      color: rgb(251, 155, 188);
+    }
+    
+    .title h2 {
+      text-align: center;
+      margin-top: -30px;
+      font-size: 30px;
+    }
+    
+    .menu {
+      display: flex;
+      justify-content: center;
+      padding: 0px;
+      margin-top: -15px;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      font-size: 20px;
+    }
+    
+    .menu.show {
+      opacity: 1;
+      transform: translateY(0);
+      font-size: 20px;
+    }
+    
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      font-size: 20px;
+    }
+    
+    .menu li {
+      margin: 0 10px;
+      font-size: 20px;
+    }
+    
+    .menu a {
+      font-size: 20px;
+      color: #e894a6;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    
+    .menu a:hover {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      color: #fffd9e;
+    }
+    
+    .content {
+      padding: 60px;
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: flex-start;
+      overflow-y: scroll;
+      height: calc(500px - 60px); /* Altezza della finestra meno l'altezza del banner */
+      margin-bottom: -20px;
+    }
+    
+    .box {
+      flex: 0 0 calc(33.33% - 20px);
+      height: 200px;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #333;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      color: #fff;
+      position:relative;
+    }
+    
+    .box:hover {
+      height:200px;
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .caption {
+      opacity: 0;
+      transition: opacity 0.1s linear;
+      color: #000;
+    }
+
+    .caption h3 {
+      font-size: 21px;
+    }
+
+    .caption p {
+      font-size: 17px;
+    }
+
+    .caption p a {
+      color: #7b5dde;
+    }
+
+    .caption p a:hover{
+      color: blue;
+    }
+
+    .img {
+        opacity: 0.5;
+        transition: opacity 0.3s linear, transform 0.3s ease;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -160px;
+        margin-right: 15px;
+    }
+    
+    .box:hover .img {
+      opacity : 1;
+      transform: scale(1.15) translateX(160px);
+      transition: transform 0.4s ease;
+    }
+
+    .box:hover .caption {
+      opacity: 1;
+    }
+
+    
+    .box-1 {
+      background-image: linear-gradient(180deg, #e894a6, #b871ff );
+      margin-left: 180px;
+      margin-top: 100px;
+      border-radius: 15px 15px 15px 15px;
+    }
+    
+    .box-2 {
+      background-image: linear-gradient(180deg, #a27dff, #fd7186);
+      margin-right: 180px;
+      margin-top: 100px;
+      border-radius: 15px 15px 15px 15px;
+    }
+
+    .box-3 {
+      background-image: linear-gradient(180deg, #da8f9a, #ff7593);
+      border-radius: 15px 15px 15px 15px;
+      margin-left: 590px;
+      margin-top: 30px;
+    }
+    }
+
+    @media screen and (min-width: 1024px) {
+    body {
+      font-family: "Lato", Arial, sans-serif;
+      background: linear-gradient(180deg, indigo, rgb(180, 182, 239));
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      color:  #b7e39a;
+    }
+    
+    mark {
+      background-color: #eafdab;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(180deg, indigo,rgb(180, 182, 239));
+    }
+    
+    .title h1 {
+      line-height: 60px;
+      text-align: center;
+      font-size: 50px;
+      margin-top: 10px;
+      color: rgb(251, 155, 188);
+    }
+    
+    .title h2 {
+      text-align: center;
+      margin-top: -30px;
+      font-size: 30px;
+    }
+    
+    .menu {
+      display: flex;
+      justify-content: center;
+      padding: 0px;
+      margin-top: -15px;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      font-size: 20px;
+    }
+    
+    .menu.show {
+      opacity: 1;
+      transform: translateY(0);
+      font-size: 20px;
+    }
+    
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      font-size: 20px;
+    }
+    
+    .menu li {
+      margin: 0 10px;
+      font-size: 20px;
+    }
+    
+    .menu a {
+      font-size: 20px;
+      color: #e894a6;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    
+    .menu a:hover {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      color: #fffd9e;
+    }
+    
+    .content {
+      padding: 60px;
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: flex-start;
+      overflow-y: scroll;
+      height: calc(500px - 60px); /* Altezza della finestra meno l'altezza del banner */
+      margin-bottom: -20px;
+    }
+    
+    .box {
+      flex: 0 0 calc(33.33% - 20px);
+      height: 200px;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #333;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      color: #fff;
+      position:relative;
+    }
+    
+    .box:hover {
+      height:200px;
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .caption {
+      opacity: 0;
+      transition: opacity 0.1s linear;
+      color: #000;
+    }
+
+    .caption h3 {
+      font-size: 21px;
+    }
+
+    .caption p {
+      font-size: 17px;
+    }
+
+    .caption p a {
+      color: #7b5dde;
+    }
+
+    .caption p a:hover{
+      color: blue;
+    }
+
+    .img {
+        opacity: 0.5;
+        transition: opacity 0.3s linear, transform 0.3s ease;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -160px;
+        margin-right: 15px;
+    }
+    
+    .box:hover .img {
+      opacity : 1;
+      transform: scale(1.15) translateX(160px);
+      transition: transform 0.4s ease;
+    }
+
+    .box:hover .caption {
+      opacity: 1;
+    }
+
+    
+    .box-1 {
+      background-image: linear-gradient(180deg, #e894a6, #b871ff );
+      margin-left: 180px;
+      margin-top: 100px;
+      border-radius: 15px 15px 15px 15px;
+    }
+    
+    .box-2 {
+      background-image: linear-gradient(180deg, #a27dff, #fd7186);
+      margin-right: 180px;
+      margin-top: 100px;
+      border-radius: 15px 15px 15px 15px;
+    }
+
+    .box-3 {
+      background-image: linear-gradient(180deg, #da8f9a, #ff7593);
+      border-radius: 15px 15px 15px 15px;
+      margin-left: 590px;
+      margin-top: 30px;
+    }
     }
   
   </style>
